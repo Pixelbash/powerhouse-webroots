@@ -1,0 +1,40 @@
+{
+  "name": "pixelbash/powerhouse",
+  "description": "Powerhouse",
+  "license": "proprietary",
+
+  "repositories": [
+    { "type":"composer", "url":"http://wpackagist.org" },
+
+    { "type": "package",
+      "package" : {
+        "name": "wordpress",
+        "type": "webroot",
+        "version": "4.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
+       },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    }
+  ],
+
+  "require": {
+    "composer/installers": "1.0.x-dev",
+    "wordpress": "4.1"
+  },
+
+  "minimum-stability": "dev",
+
+  "extra": {
+    "wp-content": "app/wp-content",
+    "webroot-dir": "app/wp",
+    "webroot-package": "wordpress",
+    "installer-paths": {
+      "app/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    }
+  }
+}
