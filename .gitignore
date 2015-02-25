@@ -3,9 +3,7 @@
 /__working/*
 
 /app/wp/*
-/app/wp-content/themes/*
-/app/wp-content/plugins/*
-/app/wp-content/uploads/*
+/app/content/*
 /app/wp-config.php
 
 /vendor/*
