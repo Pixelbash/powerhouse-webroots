@@ -3,7 +3,11 @@
 /__working/*
 
 /app/wp/*
-/app/content/*
+/app/content/languages/*/*
+/app/content/plugins/*/*
+/app/content/themes/*/*
+/app/content/upgrade/*/*
+/app/content/uploads/*/*
 /app/wp-config.php
 
 /vendor/*
